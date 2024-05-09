@@ -96,6 +96,7 @@ nav a img{
     z-index: 99;
     top: -100%;
     transition: all 0.3s ease;
+    overflow: hidden;
     
 }
 .secnav{
@@ -138,15 +139,75 @@ nav a img{
     justify-content: center;
 }
 .navpage h3{
-    font-size: 4vw;
+   font-size: 62px;
     color: white;
 }
 .vid{
     width: 100%;
-    height: 40vh;
+    height: 350px;
     padding: 2% 3%;
 }
 .vid video{
     height: 100%;
     width: auto;
+   
 }
+
+.page1{
+    width: 100%;
+    height: 88vh;
+    background-color: black;
+    overflow: hidden;
+}
+.page1 .back .up{
+    height: 60vh;
+    width: 100%;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0 5%;
+}
+
+.page1 .back .up h1{
+    color: white;
+    text-transform: uppercase;
+    font-size: 5vw;
+    letter-spacing: 10px;
+}
+.page1 .back .up h5{
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.2vw;
+}
+.page1 .back .up span{
+    color: rgb(255, 0, 0);
+   
+}
+.page1 .back .up button{
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.6vw;
+    padding: 10px 40px;
+    margin-top: 3%;
+    background-color: rgb(255, 0, 0);
+    border: none;
+}
+.down{
+    height: 40vh;
+    width: 100%;
+    border: 2px solid green;
+    
+}
+@media screen and (max-width: 768px) {
+
+ 
+
+    .vid{
+        width: 100%;
+        height: 50vw;
+        
+        padding: 2% 3%;
+    }
+  }
