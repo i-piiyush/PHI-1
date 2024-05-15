@@ -1,7 +1,11 @@
+
+const scroll = new LocomotiveScroll({
+  el: document.querySelector('.main'),
+  smooth: true});
+
 const navClick = document.querySelector(".navClick");
 const gola = document.querySelector(".gola");
 const gola2 = document.querySelector(".gola2");
-
 
 
 gola.addEventListener("click", () => {

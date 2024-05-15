@@ -4,11 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
   <link rel="stylesheet" href="style.css">
   <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
     rel="stylesheet"
 />
+
 </head>
 <body>
   <div class="main">
@@ -60,11 +62,17 @@
         </div>
       </div>
       <div class="front">
-        <img src="./heroimg.png" alt="">
+        <img src="./heroimg.png" alt="" data-scroll data-scroll-speed="-2">
 
       </div>
     </section>
-  </div>
+    <section class="page2">
+      <div class="vid" data-scroll data-scroll-direction="horizontal">
+        hi
+      </div>
+    </section>
+   </div>
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
