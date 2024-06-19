@@ -143,6 +143,7 @@ nav a img{
 .navpage h3{
    font-size: 62px;
     color: white;
+    cursor: pointer;
 }
 .vid{
     width: 100%;
@@ -248,6 +249,237 @@ nav a img{
     height: 50vh;
     width: 100%;
 }
+.signup{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(69, 69, 69, 0.243);
+    z-index: 100;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(20px);
+}
+.signup .box{
+    height: 80%;
+    width: 80%;
+    background-color: white;
+    border-radius: 15px;
+}
+.cross{
+    width:100%;
+    height: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 5%;
+    
+}
+.cross i{
+    scale: 2;
+    cursor: pointer;
+}
+.smain{
+    height: 90%;
+    width: 100%;
+    
+    display: flex;
+    
+}
+.sdetail{
+    height: 100%;
+    width: 50%;
+    
+}
+.first{
+    background-color: white;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.first h2{
+  font-weight: 800;
+  font-size: 38px;
+}
+.first p span{
+    font-weight: 800;
+    color: black;
+    
+  }
+  .first p{
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.445);
+    
+  }
+  .second{
+    background-color: white;
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cssbuttons-io-button {
+    background: black;
+    color: white;
+    font-family: inherit;
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em black;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+  }
+  
+  .cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em black;
+    right: 0.3em;
+    transition: all 0.3s;
+  }
+  
+  .cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+  }
+  
+  .cssbuttons-io-button .icon i{
+    width: 1.1em;
+    transition: transform 0.3s;
+    color:  black;
+  }
+  
+  .cssbuttons-io-button:hover .icon i {
+    transform: translateX(0.1em);
+  }
+  
+  .cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+  }
+  .third{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 1%;
+    color: rgba(0, 0, 0, 0.445);
+  }
+  .forth{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+  }
+  .spic{
+    width: 50%;
+    height: 100%;
+    background-color: aqua;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    background-color: #fff;
+    padding: 20px;
+    
+    position: relative;
+  }
+  
+
+  
+  .message, .signin {
+    color: rgba(88, 87, 87, 0.822);
+    font-size: 14px;
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a {
+    color: royalblue;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline royalblue;
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+   
+  }
+  
+  .form label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,.form label .input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form label .input:valid + span {
+    color: green;
+  }
+  
+  .submit {
+    border: none;
+    outline: none;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+  }
+  
+ 
+  
+
 @media screen and (max-width: 768px) {
 
  
