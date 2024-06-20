@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
+@font-face {
+  font-family: cocacola;
+  src: url("./LOKICOLA.TTF");
+}
 *{
     padding: 0;
     margin: 0;
@@ -259,6 +262,7 @@ nav a img{
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(20px);
+    overflow: hidden;
 }
 .signup .box{
     height: 80%;
@@ -399,7 +403,7 @@ nav a img{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 50%;
+    width: 80%;
     background-color: #fff;
     padding: 20px;
     
@@ -484,6 +488,9 @@ nav a img{
 .spic{
   background-color: white;
   width: 400px;
+  position: relative;
+  z-index: 10;
+  border-radius: 14px;
 }
 .spic .back{
   background-color: grey;
@@ -492,7 +499,75 @@ nav a img{
   background-image: url("./signupimg.png");
   background-position:center;
   background-size: cover;
+  border-radius: 14px;
+  
 }
+.spic .overlap{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 11;
+  background-color: #00000049;
+  top: 0;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 5% 0;
+  border-radius: 14px;
+
+}
+.text{
+  padding: 15% 0;
+  
+}
+.text .normal{
+ text-align: center;
+ line-height: 1%;
+ font-size: 36px;
+ 
+}
+.text .nonormal{
+  font-family:cocacola ;
+  text-align: center;
+  font-weight: 200;
+  font-size: 52px;
+  color: red;
+}
+.glass{
+  height: 30%;
+  width: 80%;
+  background-color: rgba(0, 138, 60, 0.171);
+  border-radius: 12px;
+  border: 1px solid #ffffff14;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 5%;
+  
+}
+.text2{
+  font-size: 13px;
+}
+.pfp{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+.mpfp{
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
 @media screen and (max-width: 768px) {
 
  
