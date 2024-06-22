@@ -9,7 +9,10 @@ const gola2 = document.querySelector(".gola2");
 
 const signUp = document.querySelector(".s_up");
 const signUpPage = document.querySelector(".signup");
-const close = document.querySelector("#close");
+let closebtn = document.querySelector("#close");
+const Lbtn = document.querySelector(".first p span ");
+const loginPage = document.querySelector(".login");
+
 
 gola.addEventListener("click", () => {
   navClick.style.top = 0;
@@ -24,6 +27,19 @@ gola2.addEventListener("click", () => {
 signUp.addEventListener("click",()=>{
   signUpPage.style.display="flex"
 })
-close.addEventListener("click",()=>{
+
+Lbtn.addEventListener("click",()=>{
+  loginPage.style.display="flex"
   signUpPage.style.display="none"
 })
+
+// closebtn.addEventListener("click",()=>{
+//   signUpPage.style.display="none"
+//   loginPage.style.display="none"
+//   console.log("working");
+// })
+function closefnc(){
+  signUpPage.style.display="none"
+  loginPage.style.display="none"
+  console.log("working");
+}
