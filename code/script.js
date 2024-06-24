@@ -17,11 +17,13 @@ const loginPage = document.querySelector(".login");
 gola.addEventListener("click", () => {
   navClick.style.top = 0;
   gola2.style.scale = 1;
+  scroll.stop()
 });
 
 gola2.addEventListener("click", () => {
   navClick.style.top = "-100%";
   gola2.style.scale = 0;
+  scroll.start()
 });
 
 signUp.addEventListener("click",()=>{
@@ -43,3 +45,16 @@ function closefnc(){
   loginPage.style.display="none"
   console.log("working");
 }
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
