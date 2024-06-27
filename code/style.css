@@ -637,6 +637,7 @@ nav a img {
   align-items: flex-end;
   position: relative;
   overflow: hidden;
+  
 
 }
 .bottle{
@@ -645,8 +646,11 @@ nav a img {
   width: 30%;
   position: absolute;
   top: 10%;
-  right: 7%;
+  right: 15%;
  
+}
+.bottle img{
+  object-fit: cover;
 }
 .aboutme{
   height: 100%;
@@ -659,23 +663,82 @@ nav a img {
   padding: 5%;
 }
 .aboutme h1{
-  font-size: 8vw;
+  font-size: 104px;
   text-transform: uppercase;
   font-weight: 800;
   color: white;
 }
 .aboutme p{
-  font-size: 1.5vw;
+  font-size: 24px;
   text-transform: uppercase;
   
   color: white;
 }
 .page5{
-  height: 50vh;
+  height: 70vh;
   width: 100%;
   background-color: #fff;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.page5 .upar{
+  
+  height: 30%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.page5 .upar h1{
+  text-transform: uppercase;
+  font-size: 64px;
+  font-weight: 800;
+}
+.page5 .upar p{
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: 400;
+  letter-spacing: 7px;
+}
+.page5 .upar .highlight{
+  background: rgb(51,131,252);
+background: linear-gradient(180deg, rgba(51,131,252,0) 50%, rgba(255,0,0,1) 50%);
 }
 @media screen and (max-width: 768px) {
+  .page4{
+    height: 60vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+  
+  }
+  .aboutme{
+    height: 100%;
+    width: 100%;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5% ;
+  }
+  .aboutme h1{
+    font-size: 8vw;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: white;
+  }
+  .aboutme p{
+    font-size: 14px;
+    text-transform: uppercase;
+    
+    color: white;
+  }
   .vid {
     width: 100%;
     height: 50vw;
@@ -701,8 +764,14 @@ nav a img {
   .swiper-slide h4{
     font-size: 20px;
   }
+  .bottle{
+  
+   display: none;
+   
+  }
 }
 @media screen and (max-width: 1024px) {
+
   .spic {
     display: none;
   }
@@ -713,5 +782,51 @@ nav a img {
   .sdetail {
     height: 100%;
     width: 90%;
+  }
+  .bottle{
+  
+    height: 100%;
+    width: 30%;
+    position: absolute;
+    top: 40%;
+    right:20%;
+   
+  }
+  .bottle img{
+    object-fit: cover;
+    width: auto;
+    height: 500px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .aboutme h1{
+    font-size: 42px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: white;
+  }
+  .aboutme p{
+    font-size: 14px;
+    text-transform: uppercase;
+    
+    color: white;
+  }
+  .page4{
+    height: 60vh;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+  
+  }
+  .bottle{
+  
+   display: none;
+   
+  }
+  .bottle img{
+    object-fit: cover;
   }
 }
